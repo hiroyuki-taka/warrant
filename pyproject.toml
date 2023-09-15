@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "warrant-local"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = ["README.md"]
+packages = [{ include = "warrant" }]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+boto3 = "^1.26.130"
+envs = "~1.3"
+python-jose = { extras = ["pycryptodome"], version = "~3.1.0" }
+requests = "^2.22.0"
+six = "^1.13.0"
+
+[tool.poetry.group.dev.dependencies]
+botocore = "^1.26.130"
+coverage = "^7.3.1"
+mock = "^5.1.0"
+nose = "^1.3.7"
